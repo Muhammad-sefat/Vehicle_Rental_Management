@@ -3,6 +3,9 @@ import { Pool } from "pg";
 
 export const pool = new Pool({
   connectionString: `${config.CONNECTION_STR}`,
+  ssl: {
+    rejectUnauthorized: false,
+  },
 });
 
 const initDB = async () => {
