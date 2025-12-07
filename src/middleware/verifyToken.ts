@@ -23,13 +23,6 @@ const verifyToken = () => {
 
       req.user = decoded;
 
-      if (decoded.role !== "admin") {
-        return res.status(403).json({
-          success: false,
-          message: "Forbidden: Admin access required",
-        });
-      }
-
       next();
     } catch (err: any) {
       res.status(500).json({

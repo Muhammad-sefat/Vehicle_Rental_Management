@@ -9,7 +9,7 @@ export const getAllUsersService = async () => {
   return result.rows;
 };
 
-// UPDATE USER (Admin or Own)
+// UPDATE USER
 export const updateUserService = async (userId: number, payload: any) => {
   const { name, email, phone, role } = payload;
 
@@ -44,8 +44,5 @@ export const deleteUserService = async (userId: number) => {
   if (exists.rows.length === 0) {
     throw new Error("User not found");
   }
-
-  // Booking check will be added when bookings module is made
-
   await pool.query(`DELETE FROM users WHERE id = $1`, [userId]);
 };
