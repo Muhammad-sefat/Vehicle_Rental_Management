@@ -4,8 +4,7 @@
 A complete backend API for managing vehicle rentals, built with Node.js, TypeScript, Express, and PostgreSQL.
 
 ### 🌐 Live API URL
-
-👉 Add here later
+👉 https://vehicle-rental-management-rust.vercel.app/
 
 ### Features
 
@@ -64,8 +63,10 @@ A complete backend API for managing vehicle rentals, built with Node.js, TypeScr
 ### ⚙️ Setup Instructions
 
 1️⃣ Clone the Repository
-git clone <your-repo-url>
-cd vehicle-rental-management
+
+- git clone repo-url
+
+- cd vehicle-rental-management
 
 2️⃣ Install Dependencies
 npm install
@@ -74,17 +75,19 @@ npm install
 
 #### Create a .env file:
 
-PORT=5000
-DATABASE_URL=postgresql://<username>:<password>@localhost:5432/<dbname>
-JWT_SECRET=your_secret_key
+- PORT=5000
+
+- DATABASE_URL=postgresql://<username>:<password>@localhost:5432/<dbname>
+
+- JWT_SECRET=your_secret_key
 
 4️⃣ Start the Development Server
 npm run dev
 
 
-Your API is now live at:
+API is now live at:
 
-http://localhost:5000
+https://vehicle-rental-management-rust.vercel.app/
 
 #### 🚀 Usage Instructions
 
@@ -107,11 +110,11 @@ http://localhost:5000
 
 #### 👤 Users
 
-Get Users: GET /api/v1/users (Admin)
+- Get Users: GET /api/v1/users (Admin)
 
-Update User: PUT /api/v1/users/:id (Admin or Own)
+- Update User: PUT /api/v1/users/:id (Admin or Own)
 
-Delete User: DELETE /api/v1/users/:id (Admin)
+- Delete User: DELETE /api/v1/users/:id (Admin)
 
 #### 📖 Bookings
 
@@ -121,5 +124,5 @@ Delete User: DELETE /api/v1/users/:id (Admin)
 
 - Update Booking: PUT /api/v1/bookings/:id
 
-- Admin → Mark as returned , cancelled
+- Admin → Mark as returned, cancelled
 
